@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -57,6 +56,7 @@ app.put('/items/:id', async (req, res) => {
     res.json(updatedItem);
   } catch (err) {
     res.status(500).json({ error: err.message });
+
   }
 });
 
